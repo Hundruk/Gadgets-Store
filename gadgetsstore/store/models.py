@@ -24,8 +24,6 @@ class Product(models.Model):
 
     class Meta:
         verbose_name_plural = 'products' # Plural name for admin interface
-        ordering = ('name',) # Default ordering by name
-        index_together = (('id', 'slug'),) # Composite index on id and slug for faster lookups
 
     def __str__(self):
         return self.name
