@@ -117,6 +117,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [BASE_DIR / 'static'] # Directory for static files
+
+MEDIA_URL = '/media/' # URL to access media files
+MEDIA_ROOT = BASE_DIR / 'static/media' # Directory to store uploaded media files
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
